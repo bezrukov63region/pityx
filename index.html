@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>PRINTIX — 3D Мастерская</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+
+    <script type="module"
+      src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js">
+    </script>
+</head>
+<body>
+<div class="space"></div>
+
+<header class="hero">
+    <div class="container center">
+        <span class="label">PRINTIX</span>
+        <h1>Идея в реальность слой за слоем</h1>
+        <p class="subtitle">Профессиональная 3D-печать и моделирование в Самаре. Точная геометрия, аккуратная сборка и честный результат.</p>
+
+        <model-viewer
+            src="https://modelviewer.dev/shared-assets/models/Astronaut.glb"
+            auto-rotate
+            camera-controls
+            rotation-per-second="16deg"
+            class="model">
+        </model-viewer>
+
+        <!-- Кнопка теперь ведёт в Telegram -->
+        <a class="btn" href="https://t.me/WITCHER_52" target="_blank">Связаться с нами</a>
+    </div>
+</header>
+
+<section class="section">
+    <div class="container card">
+        <h2><i class="fa-solid fa-layer-group icon"></i> Как рождается изделие</h2>
+        <p>Любое изделие начинается с цифровой модели. Затем форма создаётся постепенно — слой за слоем, пока идея не превращается в физический объект.</p>
+        <p>Мы контролируем каждый этап: от подготовки модели до финального результата, чтобы изделие было прочным, аккуратным и соответствовало задаче.</p>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container card">
+        <h2><i class="fa-solid fa-lightbulb icon"></i> Наш подход</h2>
+        <p>Мы работаем не по шаблону. Каждая деталь, фигурка или прототип — это отдельный проект с собственными требованиями.</p>
+        <p>Такой подход позволяет получать результат, который не выглядит «напечатанным на коленке», а ощущается как полноценный продукт.</p>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container card">
+        <h2><i class="fa-solid fa-cubes icon"></i> Материалы</h2>
+        <ul class="materials">
+            <li><b>PLA</b> — эстетика и детализация</li>
+            <li><b>ABS</b> — прочность и надёжность</li>
+            <li><b>PETG</b> — устойчивость к влаге</li>
+            <li><b>Resin</b> — максимальная точность</li>
+        </ul>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container card">
+        <h2><i class="fa-solid fa-images icon"></i> Наши работы</h2>
+        <div class="grid">
+            <img src="https://images.unsplash.com/photo-1581092919535-7146c5c93c33">
+            <img src="https://images.unsplash.com/photo-1612454376902-577cd469d008">
+            <img src="https://images.unsplash.com/photo-1629905679171-4c4f6f04e6f2">
+            <img src="https://images.unsplash.com/photo-1604079628040-94301bb21b91">
+            <img src="https://images.unsplash.com/photo-1623065422902-30a2d299bbe4">
+        </div>
+    </div>
+</section>
+
+<section class="section2">
+    <div class="container card">
+        <h2><i class="fa-solid fa-map-location-dot icon"></i> Где нас найти</h2>
+        <iframe 
+            src="https://yandex.ru/map-widget/v1/?ll=50.185053%2C53.215906&z=18&pt=50.185053,53.215906,pm2rdm" 
+            width="100%" 
+            height="400" 
+            frameborder="0" 
+            allowfullscreen
+            style="border-radius:18px;">
+        </iframe>
+        <p>📍 Самара, ул. Ерошевского, 31</p>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container card">
+        <h2><i class="fa-solid fa-location-dot icon"></i> Контакты</h2>
+        <p>📞 <a href="tel:+79270209282">8 (927) 020-92-82</a></p>
+        <p>✉ <a href="mailto:bezrukov_06@inbox.ru">bezrukov_06@inbox.ru</a></p>
+        <p>📍 Самара, ул. Ерошевского, 31</p>
+    </div>
+</section>
+
+<footer>© 2026 PRINTIX</footer>
+</body>
+</html>

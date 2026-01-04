@@ -1,0 +1,179 @@
+/* --- Общие стили --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: radial-gradient(circle at bottom, #0b1020, #02030a);
+    color: #e6eef5;
+    overflow-x: hidden;
+}
+
+/* --- Космос / звёзды --- */
+.space::before,
+.space::after {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image: radial-gradient(white 1px, transparent 1px);
+    background-size: 80px 80px;
+    opacity: 0.15;
+    animation: stars 120s linear infinite;
+    z-index: -1;
+}
+.space::after {
+    background-size: 140px 140px;
+    opacity: 0.08;
+    animation-duration: 200s;
+}
+
+/* --- Контейнеры --- */
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 0 15px;
+}
+
+.center {
+    text-align: center;
+}
+
+/* --- Карточки --- */
+.card {
+    background: rgba(255,255,255,0.04);
+    border-radius: 24px;
+    padding: 50px 30px;
+    backdrop-filter: blur(10px);
+    margin-bottom: 40px;
+}
+
+/* --- HERO --- */
+.hero {
+    padding: 100px 20px;
+}
+
+.hero h1 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 52px;
+    margin-bottom: 20px;
+}
+
+.subtitle {
+    font-size: 18px;
+    opacity: 0.8;
+}
+
+/* --- Заголовки и иконки --- */
+h2 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 36px;
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.icon {
+    color: #6ae3ff;
+}
+
+/* --- Параграфы и списки --- */
+p {
+    font-size: 17px;
+    line-height: 1.8;
+    margin-bottom: 18px;
+    opacity: 0.85;
+}
+
+ul.materials {
+    list-style: none;
+    padding-left: 0;
+}
+
+ul.materials li {
+    margin-bottom: 10px;
+    font-size: 17px;
+}
+
+/* --- Сетка для работ --- */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+}
+
+.grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 16px;
+    transition: transform 0.3s;
+}
+
+.grid img:hover {
+    transform: scale(1.05);
+}
+
+/* --- Стили для iframe карты --- */
+iframe {
+    border-radius: 18px;
+    border: none;
+}
+
+/* --- Кнопки --- */
+.btn {
+    display: inline-block;
+    padding: 14px 40px;
+    border-radius: 40px;
+    background: linear-gradient(135deg, #6ae3ff, #5b7cff);
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(106,227,255,0.4);
+}
+
+/* --- Footer --- */
+footer {
+    text-align: center;
+    padding: 30px 0;
+    opacity: 0.6;
+    font-size: 15px;
+}
+
+/* --- Model Viewer --- */
+model-viewer.model {
+    width: 100%;
+    max-width: 600px;
+    height: 400px;
+    margin: 30px auto 20px;
+    border-radius: 16px;
+    background: rgba(0,0,0,0.05);
+}
+
+/* --- Анимации --- */
+@keyframes stars {
+    from { background-position: 0 0; }
+    to { background-position: 3000px 3000px; }
+}
+
+/* --- Адаптивность --- */
+@media(max-width: 600px) {
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+}
+
